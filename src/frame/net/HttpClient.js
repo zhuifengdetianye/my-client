@@ -51,6 +51,14 @@ export default class Client {
           code: 0
         })
       })
+      .then(result => {
+        if (result.success) {
+          return result.data
+        }
+
+        const { code, message } = result.error || {}
+        throw new KnownError({ message, code })
+      })
   }
 
   get (path: string, query?: ?Query, headers?: Headers = {}): Promise<*> {

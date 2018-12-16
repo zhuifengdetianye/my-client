@@ -1,0 +1,9 @@
+.field {
+  .item {
+    display: inline-block;
+    padding-right: 10px;
+    .checkbox {
+      width: 20px !important;
+    }
+  }
+}

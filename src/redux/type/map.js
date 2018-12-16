@@ -11,7 +11,7 @@ export type MapAction =
   | { type: 'DELETE_MAP', keyPath: Array<string | number> }
   | {
       type: 'UPDATE_MAP',
-      keyPath: string<string | number>,
+      keyPath: Array<string | number>,
       notSetValue: any,
       updater: (value: any) => any
     }

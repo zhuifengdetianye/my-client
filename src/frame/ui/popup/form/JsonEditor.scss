@@ -1,0 +1,48 @@
+
+.main {
+  padding: 0 0 15px 0;
+
+}
+.alert {
+  background: rgba(0, 0, 0, 0.8);
+  height: 1270px;
+  z-index: 102;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  >div{
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    top: 118px;
+    left: 50%;
+    margin-left: -200px;
+  }
+  .btn1{
+    background-color: #5a5a5a;
+    border: 1px solid #181a1f;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    top: 30px;
+    right: -100px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .btn2{
+    position: relative;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #EEE;
+    color: #333;
+    padding: 0 0 0 5px;
+    display: inline-block;
+    left: 385px;
+    top: 16px;
+  }
+}

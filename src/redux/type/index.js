@@ -11,7 +11,7 @@ export type ReduxInitAction = { type: "@@INIT" };
 export type State = VarsState & UiPopupState & MapState;
 
 export type Action =
-  | ReduxInitAcion
+  | ReduxInitAction
   | VarsAction
   | UiPopupAction
   | MapAction
@@ -19,4 +19,4 @@ export type Action =
 
 export type Dispatch = ReduxDispatch<Action>;
 
-export type Store = ReduxDispatch<State, Action, Dispatch>;
+export type Store = ReduxStore<State, Action, Dispatch>;
