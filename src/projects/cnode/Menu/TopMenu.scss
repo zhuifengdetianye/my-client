@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  .home {
+    width: 80px;
+    text-align: center;
+  }
+  .menu {
+    a {
+      display: inline-block;
+      width: 80px;
+      text-align: center;
+    }
+  }
+}

@@ -125,12 +125,8 @@ class FormPopup extends React.PureComponent<Props, State> {
       <div className={styles.this}>
         <div className={styles.shade} />
         <div className={styles.main}>
-          <div>
+          <div className={styles.title}>
             {title}
-            <i
-              className='fa fa-times-circle'
-              onClick={this.onCancel}
-            />
           </div>
           <div className={styles.content}>
             <PropsEditor
@@ -140,8 +136,11 @@ class FormPopup extends React.PureComponent<Props, State> {
               fields={fields}
             />
           </div>
-          <div>
-            <div>
+          <div
+            className={styles.button}
+            style={{ padding: '10px 0', fontSize: 18 }}
+          >
+            <div className={styles.cancel}>
               <span onClick={this.onCancel}>取消</span>
             </div>
             <div>
